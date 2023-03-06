@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+
+body {
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  color: #444;
+  background: url("./abstract-sky-pastel.jpg") no-repeat center;
+  background-size: cover;
+  margin: 0;
+}
+.name{
+  font-size: 3em;
+  font-weight: 700;
+}
+.lastName{
+  font-weight: 300;
+}
+.App {
+  width: 70%;
+  max-width: 64em;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 207, 0.664);
+  padding: 20px;
+}
+
+footer {
+  margin-top: 3em;
+
+  
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 1em 0;
+  padding: 1em;
+}
+i {
+  color: #444;;
+}
