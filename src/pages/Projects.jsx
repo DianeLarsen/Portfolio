@@ -1,32 +1,35 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Development from "./Development";
-import ProductDesign from "./ProductDesign";
-import WebDesign from "./WebDesign";
+import Development from "../components/Development";
+import ProductDesign from "../components/ProductDesign";
+import WebDesign from "../components/WebDesign";
 
 const data = [
   "Web Design",
   "Development",
-  "Illustration",
   "Product Design",
-  "Social Media",
 ];
 
 const Section = styled.div`
-  height: 100vh;
+  min-height: 90vh;
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
-  position: relative;
+
   color: black;
   font-size: 14px;
   font-weight: 300;
+  scroll-padding-top: 60px;
+
+  top: 70px;
 `;
 
 const Container = styled.div`
-  width: 1400px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+height: 100%;
+margin-top: 70px;
 
   @media only screen and (max-width: 768px) {
     width: 100%;
@@ -38,7 +41,8 @@ const Left = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
-
+  scroll-padding-top: 60px;
+  
   @media only screen and (max-width: 768px) {
     padding: 20px;
     justify-content: center;
@@ -50,19 +54,20 @@ const List = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 20px;
+ 
 `;
 
 const ListItem = styled.li`
-  font-size: 90px;
+  font-size: 80px;
   font-weight: bold;
   cursor: pointer;
   color: transparent;
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 1px #da4ea2;
   position: relative;
 
   @media only screen and (max-width: 768px) {
-    font-size: 24px;
-    color: white;
+    font-size: 50px;
+    color: #da4ea2;
     -webkit-text-stroke: 0px;
   }
 
@@ -91,13 +96,17 @@ const ListItem = styled.li`
 `;
 
 const Right = styled.div`
+position: relative;
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Projects = () => {
   const [work, setWork] = useState("Web Design");
   return (
-    <Section>
+    <Section id="projects">
       <Container>
         <Left>
           <List>

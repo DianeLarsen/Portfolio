@@ -1,33 +1,32 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
-import Map from "./Map";
+
+
 
 const Section = styled.div`
-  height: 100vh;
+min-height: 100vh;
   scroll-snap-align: center;
+  scroll-padding-top: 60px;
+  margin-top: 70px;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Container = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   gap: 50px;
 `;
 
-const Left = styled.div`
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  @media only screen and (max-width: 768px) {
-    justify-content: center;
-  }
-`;
+
 
 const Title = styled.h1`
-  font-weight: 200;
+color: #da4ea2;
+  font-weight: bold;
 `;
 
 const Form = styled.form`
@@ -65,13 +64,6 @@ const Button = styled.button`
   padding: 20px;
 `;
 
-const Right = styled.div`
-  flex: 1;
-
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
-`;
 
 const Contact = () => {
   const ref = useRef();
@@ -99,9 +91,9 @@ const Contact = () => {
       );
   };
   return (
-    <Section>
+    <Section id="contact">
       <Container>
-        <Left>
+       
           <Form ref={ref} onSubmit={handleSubmit}>
             <Title>Contact Us</Title>
             <Input placeholder="Name" name="name" />
@@ -115,11 +107,10 @@ const Contact = () => {
             {success &&
               "Your message has been sent. We'll get back to you soon :)"}
           </Form>
-        </Left>
-        <Right>
-          <Map />
-        </Right>
+       
+       
       </Container>
+     
     </Section>
   );
 };
