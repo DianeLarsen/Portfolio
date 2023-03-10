@@ -1,14 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 const Desc = styled.div`
-  width: 200px;
+
+  width: fit-content;
   height: fit-content;
   padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  position: absolute;
-  top: 100px;
-  right: 100px;
+  color: rebeccapurple;
+  background: rgba(102, 51, 153, 0.13);
+  border-radius: 50px;
+margin-right:10px;
+border: 2px solid rebeccapurple;
 
   @media only screen and (max-width: 768px) {
     top: 0;

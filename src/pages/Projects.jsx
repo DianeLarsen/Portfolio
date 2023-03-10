@@ -15,13 +15,14 @@ const Section = styled.div`
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
-
+  align-items: center;
   color: black;
   font-size: 14px;
   font-weight: 300;
   scroll-padding-top: 60px;
-
+  scroll-padding-bottom: 60px;
   top: 70px;
+  padding-top: 70px;
 `;
 
 const Container = styled.div`
@@ -29,19 +30,22 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
 height: 100%;
-margin-top: 70px;
+
 
   @media only screen and (max-width: 768px) {
     width: 100%;
     flex-direction: column;
   }
+  @media only screen and (max-width: 968px) {
+    flex-direction: column;
+   }
 `;
 
 const Left = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
-  scroll-padding-top: 60px;
+  
   
   @media only screen and (max-width: 768px) {
     padding: 20px;
@@ -62,7 +66,7 @@ const ListItem = styled.li`
   font-weight: bold;
   cursor: pointer;
   color: transparent;
-  -webkit-text-stroke: 1px #da4ea2;
+  -webkit-text-stroke: 1px rebeccapurple;
   position: relative;
 
   @media only screen and (max-width: 768px) {
@@ -76,7 +80,7 @@ const ListItem = styled.li`
     position: absolute;
     top: 0;
     left: 0;
-    color: pink;
+    color: rgb(225,192,255);
     width: 0px;
     overflow: hidden;
     white-space: nowrap;
@@ -96,11 +100,12 @@ const ListItem = styled.li`
 `;
 
 const Right = styled.div`
-position: relative;
-  flex: 1;
+
+ 
   display: flex;
   justify-content: center;
   align-items: center;
+ 
 `;
 
 const Projects = () => {

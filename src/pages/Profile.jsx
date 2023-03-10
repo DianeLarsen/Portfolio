@@ -2,12 +2,12 @@ import React from 'react'
 import styled from "styled-components";
 
 const Section = styled.div`
-min-height: 100vh;
+min-height: 93vh;
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
-  margin-top: 70px;
-  padding-top: 70px;
+
+ 
   scroll-padding-top: 60px;
   align-items: center;
   color: #da4ea2;

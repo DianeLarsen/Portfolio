@@ -14,8 +14,7 @@ const HireMeButton = styled.button`
   font-size: 13px;
   font-weight: 600;
   border-radius: 20px;
-  background-color: #6adf76;
-  background-image: linear-gradient(90deg, rgba(183,103,255,1) 0%, rgba(222,75,255,1) 92%);;
+  background: linear-gradient(90deg, rgba(183,103,255,1) 0%, rgba(222,75,255,1) 92%);
   transition: all 240ms ease-in-out;
   cursor: pointer;
 
@@ -32,7 +31,7 @@ const ContactButton = styled.button`
   border: 0;
   outline: 0;
   padding: 8px 1em;
-  color: #222;
+  color: white;
   font-size: 13px;
   font-weight: bold;
   border-radius: 20px;

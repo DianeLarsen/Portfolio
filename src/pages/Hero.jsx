@@ -10,9 +10,10 @@ min-height: 93vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
   justify-content: space-between;
   width: 100%;
-  
+
   
 `;
 
@@ -37,17 +38,15 @@ const Left = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
-  margin-top: 70px;
+  
   @media only screen and (max-width: 768px) {
     flex: 1;
     align-items: center;
   }
 `;
 const Title = styled.h1`
-  font-size: 74px;
-  @media only screen and (max-width: 768px) {
-    text-align: center;
-  }
+  text-align: center;
+  font-size: calc(74px + 0.390625vw);
 `;
 
 const WhatWeDo = styled.div`
@@ -78,23 +77,23 @@ const Desc = styled.p`
   }
 `;
 
-const Button = styled.button`
-  background-color: #da4ea2;
-  color: white;
-  font-weight: 500;
-  width: 100px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-`;
+// const Button = styled.button`
+//   background-color: #da4ea2;
+//   color: white;
+//   font-weight: 500;
+//   width: 100px;
+//   padding: 10px;
+//   border: none;
+//   border-radius: 5px;
+//   cursor: pointer;
+// `;
 export default function Hero() {
   return (
     <Section id="hero">
 
       <Container>
         <Left>
-        <Title>Think. Make. Solve.</Title>
+        <Title>Design. Build. Achieve.</Title>
         <WhatWeDo>
           <Line>
           <ArrowForwardIosIcon />
@@ -102,9 +101,9 @@ export default function Hero() {
           <Subtitle>What we Do</Subtitle>
         </WhatWeDo>
         <Desc>
-          we enjoy creating delightful, human-centered digital experiences.
+          We take what we are given and make it run smoother and more efficient.
         </Desc>
-        <Button>Learn More</Button>
+        {/* <Button>Learn More</Button> */}
         </Left>
       </Container>
     </Section>

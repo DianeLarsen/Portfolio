@@ -13,7 +13,8 @@ const Section = styled.div`
   justify-content: center;
   alight-items: center;
   position: sticky;
-  width: 100%;
+  width: 85%;
+max-width: 85em;
   top: 0;
   @media only screen and (max-width: 768px) {
     width: 100%;

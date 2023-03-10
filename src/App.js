@@ -30,7 +30,7 @@ const Container = styled.div`
   scroll-padding-top: 60px;
   @media only screen and (max-width: 768px) {
     width: 100%;
-  
+    height: 100vh;
   }
 `;
 
@@ -38,7 +38,7 @@ function App() {
   const { darkMode } = useContext(DarkModeContext);
 
   return (
-    <div className={`theme-${darkMode ? "dark" : "light"}`}>
+    <div className={`theme-${darkMode ? "dark" : "light"} app`}>
       <Navbar />
       <Container>
         <Hero />

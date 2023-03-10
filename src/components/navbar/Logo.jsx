@@ -5,19 +5,22 @@ import styled from "styled-components";
 const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
+  justfiy-content: center;
 `;
 
 const LogoImg = styled.div`
+display: flex;
   width: 29px;
   height: 29px;
   margin-right: 10px;
-
+  align-items: center;
+  justfiy-content: center;
 
   img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    border: 1px solid white;
+    border: 3px solid white;
     
   }
 `;
