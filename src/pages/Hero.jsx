@@ -98,7 +98,7 @@ export default function Hero() {
           <Line>
           <ArrowForwardIosIcon />
             </Line> 
-          <Subtitle>What we Do</Subtitle>
+          <Subtitle>What we do...</Subtitle>
         </WhatWeDo>
         <Desc>
           We take what we are given and make it run smoother and more efficient.
