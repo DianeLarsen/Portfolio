@@ -9,9 +9,9 @@ const LogoWrapper = styled.div`
 `;
 
 const LogoImg = styled.div`
-display: flex;
-  width: 29px;
-  height: 29px;
+  display: flex;
+  width: 35px;
+
   margin-right: 10px;
   align-items: center;
   justfiy-content: center;
@@ -19,8 +19,7 @@ display: flex;
   img {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
-    border: 3px solid white;
+
     
   }
 `;
@@ -29,17 +28,18 @@ const LogoText = styled.h2`
   font-size: 16px;
   margin: 0;
   margin-left: 4px;
-  color: whitesmoke;
+  color: white;
   font-weight: bold;
+  padding: 2px
 `;
 
 export function Logo(props) {
   return (
     <LogoWrapper>
       <LogoImg>
-        <img src="http://res.cloudinary.com/dqjh46sk5/image/upload/v1678209537/sdvx0jeekzflqjvibi4m.jpg" alt="Headshot" />
+        <img src="https://res.cloudinary.com/dqjh46sk5/image/upload/v1681312696/PandaLove/PanaLovePurple_yky4mu.svg" alt="Logo" />
       </LogoImg>
-      <LogoText>Diane Larsen</LogoText>
+      <LogoText>PandaLove Development</LogoText>
     </LogoWrapper>
   );
 }
