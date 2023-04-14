@@ -51,9 +51,7 @@ export function NavLinks(props) {
         <LinkItem>
           <Link href="#experience">Experience</Link>
         </LinkItem>
-        <LinkItem>
-          <Link href="#contact">Contact</Link>
-        </LinkItem>
+
       </LinksWrapper>
     </NavLinksContainer>
   );

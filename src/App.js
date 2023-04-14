@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import styled from "styled-components";
 import { DarkModeContext } from "./context/darkModeContext";
 import Footer from "./components/Footer";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 const Container = styled.div`
   height: 100vh;
