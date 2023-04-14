@@ -93,7 +93,10 @@ const Contact = () => {
         setSuccess(false);
       }
     );
+    e.target.reset();
   };
+
+  
   return (
     <Section id="contact">
       <Container>
