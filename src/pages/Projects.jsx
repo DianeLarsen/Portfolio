@@ -11,7 +11,7 @@ const data = [
 ];
 
 const Section = styled.div`
-  min-height: 90vh;
+  min-height: 93vh;
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
@@ -22,14 +22,14 @@ const Section = styled.div`
   scroll-padding-top: 60px;
   scroll-padding-bottom: 60px;
   top: 70px;
-  padding-top: 70px;
+  
 `;
 
 const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-height: 100%;
+  height: 100%;
 
 
   @media only screen and (max-width: 768px) {
@@ -42,14 +42,15 @@ height: 100%;
 `;
 
 const Left = styled.div`
-  flex: 1;
+  flex: 2;
   display: flex;
   align-items: center;
   
   
   @media only screen and (max-width: 768px) {
-    padding: 20px;
+    padding: 0;
     justify-content: center;
+    height: 50vh;
   }
 `;
 
@@ -103,6 +104,7 @@ const Right = styled.div`
 
  
   display: flex;
+  flex: 1;
   justify-content: center;
   align-items: center;
  
@@ -112,8 +114,8 @@ const Projects = () => {
   const [work, setWork] = useState("Web Design");
   return (
     <Section id="projects">
-      <Container>
-        <Left>
+      <Container id="project-container">
+        <Left id="left-container">
           <List>
             {data.map((item) => (
               <ListItem key={item} text={item} onClick={() => setWork(item)}>

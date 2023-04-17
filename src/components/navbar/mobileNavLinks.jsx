@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Accessibility } from "./accessibility";
+// import { Accessibility } from "./accessibility";
 import { MenuToggle } from "./menutoggle";
 
 const NavLinksContainer = styled.div`
@@ -16,11 +16,11 @@ const LinksWrapper = styled.ul`
   display: flex;
   height: fit-content;
   list-style: none;
-  background-color: #fff;
+  background-color: #b991ff;
   width: fit-content;
   flex-direction: column;
   position: fixed;
-  top: 65px;
+  top: 55px;
   right: 0;
   padding: 10px;
   border-radius: 5px;
@@ -34,13 +34,12 @@ const LinkItem = styled.li`
   font-weight: bold;
   font-size: 16px;
   display: flex;
-
-  margin-bottom: 10px;
+  
 `;
 
 const Link = styled.a`
   text-decoration: none;
-  color: inherit;
+  color: rebeccapurple;
   font-size: inherit;
 `;
 
@@ -70,7 +69,7 @@ export function MobileNavLinks(props) {
           <Link href="#contact">Contact</Link>
         </LinkItem>
           <Marginer />
-          <Accessibility />
+
         </LinksWrapper>
       )}
     </NavLinksContainer>

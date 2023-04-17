@@ -77,16 +77,7 @@ const Desc = styled.p`
   }
 `;
 
-// const Button = styled.button`
-//   background-color: #da4ea2;
-//   color: white;
-//   font-weight: 500;
-//   width: 100px;
-//   padding: 10px;
-//   border: none;
-//   border-radius: 5px;
-//   cursor: pointer;
-// `;
+
 export default function Hero() {
   return (
     <Section id="hero">
@@ -100,10 +91,9 @@ export default function Hero() {
             </Line> 
           <Subtitle>What we do...</Subtitle>
         </WhatWeDo>
-        <Desc>
-          We take what we are given and make it run smoother and more efficient.
-        </Desc>
-        {/* <Button>Learn More</Button> */}
+          <Desc>
+            The goal is take what is given and make it run smoother and more efficient.
+          </Desc>
         </Left>
       </Container>
     </Section>

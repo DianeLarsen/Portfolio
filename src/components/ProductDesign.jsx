@@ -2,14 +2,14 @@ import React from 'react'
 import styled from "styled-components";
 
 const Desc = styled.div`
-  width: 200px;
-  height: 70px;
+  width: fit-content;
+  height: fit-content;
   padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  position: absolute;
-  bottom: 200px;
-  right: 100px;
+  color: rebeccapurple;
+  background: rgba(102, 51, 153, 0.13);
+  border-radius: 50px;
+  margin-right:10px;
+  border: 2px solid rebeccapurple;
 
   @media only screen and (max-width: 768px) {
     top: 0;
@@ -22,8 +22,9 @@ const Desc = styled.div`
 export default function ProductDesign() {
   return (
     <Desc>
-        We design products with a strong focus on both world class design and
-        ensuring your product is a market success.
-      </Desc>
+      <h3>Product Design Example (layout and writeup)</h3>
+      <h3>Reasearch completed</h3>
+      <h3>Interface Design Example</h3>
+    </Desc>
   )
 }

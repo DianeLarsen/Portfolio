@@ -40,13 +40,14 @@ const ContactButton = styled.button`
   font-weight: bold;
   border-radius: 20px;
   background-color: transparent;
-  border: 2px solid #b767ff;
+  border: 2px solid #FFF;
   transition: all 240ms ease-in-out;
   cursor: pointer;
 
   &:hover {
     color: #fff;
     background-color: #b767ff;
+    border: 2px solid #b767ff;
   }
 
   &:not(:last-of-type) {

@@ -9,12 +9,14 @@ import { MobileNavLinks } from "./mobileNavLinks";
 
 
 const Section = styled.div`
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   alight-items: center;
   position: sticky;
   width: 85%;
-max-width: 85em;
+  max-width: 85em;
   top: 0;
   @media only screen and (max-width: 768px) {
     width: 100%;
@@ -22,16 +24,17 @@ max-width: 85em;
 `;
 
 const NavbarContainer = styled.div`
-
   width: 100%;
-  height: 5.5vh;
-min-height: 45px;
+  height: 7vh;
+  min-height: 45px;
   box-shadow: 0 1px 3px rgba(15, 15, 15, 0.13);
   display: flex;
   align-items: center;
   background-color: #b991ff;
+  top: 0;
   @media only screen and (max-width: 768px) {
-    padding:0 1.5em;
+    padding:.5em 1.5em;
+    top: 0;
   }
 `;
 

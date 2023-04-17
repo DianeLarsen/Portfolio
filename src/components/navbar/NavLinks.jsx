@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
 const NavLinksContainer = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 `;
 
 const LinksWrapper = styled.ul`
@@ -13,43 +14,83 @@ const LinksWrapper = styled.ul`
   display: flex;
   height: 100%;
   list-style: none;
+  align-items: center;
+  justify-content: center;
 `;
 
 const LinkItem = styled.li`
-  height: 100%;
-  padding: 0 1.1em;
+  margin: auto 1.1em;
   color: white;
   font-weight: bold;
   font-size: 16px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  border-top: 2px solid transparent;
-  transition: all 220ms ease-in-out;
 
-  &:hover {
-    border-top: 2px solid #2ecc71;
-  }
+  display: block;
+ 
+  transition: all 220ms ease-in-out;
+  position: relative;
+
 `;
 
 const Link = styled.a`
   text-decoration: none;
   color: inherit;
   font-size: inherit;
-`;
 
+  &:hover{
+    color: rebeccapurple;
+  }
+  
+  &::before {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: rebeccapurple;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+  }
+
+  &:hover::before  {
+    width: 100%;
+
+  }
+
+  
+`;
+let activeLink 
 export function NavLinks(props) {
+
+  const [toggle, setToggle] = useState(false)
+console.log(toggle)
+ useEffect(()=>{
+  function getLastPart(url) {
+    const parts = url.split('#');
+    return parts.at(-1);
+  }
+  let url = window.location.href
+activeLink = getLastPart(url) + "1"
+console.log(activeLink)
+
+}, [toggle] )
+
+
+
+
+
+
   return (
     <NavLinksContainer>
       <LinksWrapper>
         <LinkItem>
-          <Link href="#profile">Profile</Link>
+          <Link href="#profile" id="profile1" className={(e)=> e.currentTarget.id === activeLink ? "active" : ""} onClick = {() => setToggle(!toggle)}>Profile</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#projects">Projects</Link>
+          <Link href="#projects" id="projects1" className={(e)=> e.currentTarget.id === activeLink ? "active" : ""} onClick = {() => setToggle((tog)=> !tog)}>Projects</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#experience">Experience</Link>
+          <Link href="#experience" id="experience1" className={(e)=> e.currentTarget.id === activeLink ? "active" : ""} onClick = {() => setToggle((tog)=> !tog)}>Experience</Link>
         </LinkItem>
 
       </LinksWrapper>

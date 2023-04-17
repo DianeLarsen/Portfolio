@@ -20,9 +20,7 @@ const Section = styled.div`
 export default function Experience() {
   return (
     <Section id="experience">
-      <h2>Experience</h2>
-      <h3>none</h3>
-      <Skills />
+       <Skills />
     </Section>
   );
 }

@@ -63,11 +63,11 @@ const Button = styled.button`
 const Contact = () => {
   const ref = useRef();
   const [success, setSuccess] = useState(null);
-  const [formStatus, setFormStatus] = React.useState("Send");
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormStatus("Submitting...");
+
     const { name, email, message } = e.target.elements;
     let conFom = {
       name: name.value,
@@ -101,7 +101,7 @@ const Contact = () => {
     <Section id="contact">
       <Container>
         <Form ref={ref} onSubmit={handleSubmit}>
-          <Title>Contact Us</Title>
+          <Title>Thank You,</Title>
           <Input
             className="from-control"
             type="text"
@@ -127,7 +127,7 @@ const Contact = () => {
             rows={10}
           />
           <Button type="submit" className="btn btn-danger" >Send</Button>
-          {formStatus}
+          
           {success &&
             "Your message has been sent. We'll get back to you soon :)"}
         </Form>
