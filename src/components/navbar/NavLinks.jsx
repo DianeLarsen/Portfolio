@@ -89,8 +89,12 @@ console.log(activeLink)
         <LinkItem>
           <Link href="#projects" id="projects1" className={(e)=> e.currentTarget.id === activeLink ? "active" : ""} onClick = {() => setToggle((tog)=> !tog)}>Projects</Link>
         </LinkItem>
+        
         <LinkItem>
           <Link href="#experience" id="experience1" className={(e)=> e.currentTarget.id === activeLink ? "active" : ""} onClick = {() => setToggle((tog)=> !tog)}>Experience</Link>
+        </LinkItem>
+        <LinkItem>
+          <Link href="#news" id="news1" className={(e)=> e.currentTarget.id === activeLink ? "active" : ""} onClick = {() => setToggle((tog)=> !tog)}>News</Link>
         </LinkItem>
 
       </LinksWrapper>

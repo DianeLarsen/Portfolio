@@ -4,6 +4,7 @@ import "./App.css";
 import Profile from "./pages/Profile";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
+import News from "./pages/News";
 import Navbar from "./components/navbar/Navbar";
 import Contact from "./pages/Contact";
 import styled from "styled-components";
@@ -46,6 +47,7 @@ function App() {
         <Profile />
         <Projects />
         <Experience />
+        <News />
         <Contact />
       </Container>
       <Footer />
