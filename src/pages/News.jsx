@@ -89,7 +89,8 @@ export default function News() {
           <Subtitle>New and imporved</Subtitle>
         </WhatWeDo>
           <Desc>
-            Current News, Ongoing Projects and Link https://pandalove-blog.dev
+            Current News, Ongoing Projects and Link 
+            <a href="https://pandalove-blog.dev">PandaLove Blog</a>
           </Desc>
         </Left>
       </Container>
